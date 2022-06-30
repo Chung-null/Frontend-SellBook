@@ -52,9 +52,6 @@ body{
     margin: 0;
 }
 
-.header__top-item {
-
-}
 
 .header__top-link {
     color: var(--white-color);
@@ -79,17 +76,7 @@ body{
     padding-left: 0;
 }
 
-.header__heading {
 
-}
-
-.header__logo-link {
-
-}
-
-.header__logo-img {
-
-}
 
 
 .header__search {
@@ -168,9 +155,7 @@ body{
     color: var(--white-color);
 }
 
-.header__call-info {
 
-}
 
 .header__call-text {
     font-size: 13px;
@@ -263,9 +248,7 @@ body{
     height: 100%;
 }
 
-.header__nav-item {
 
-}
 
 .header__nav-link {
     color: var(--white-color);
@@ -291,9 +274,7 @@ body{
     background: #efefef;
     padding: 1.6rem 0;
 }
-.footer__top-intro {
 
-}
 
 .footer__top-intro-heading, .footer__top-policy-heading, .footer__top-contact-heading {
     font-size: 1.7rem;
@@ -310,9 +291,7 @@ body{
     margin-bottom: 1rem;
 }
 
-.footer__top-policy-item {
 
-}
 
 .footer__top-policy-link {
     font-size: 1.5rem;
@@ -325,13 +304,7 @@ body{
     text-decoration: none;
 }
 
-.footer__top-contact-wrap {
 
-}
-
-.footer__top-contact-heading {
-
-}
 
 .footer__top-contact {
     display: flex;
@@ -344,13 +317,7 @@ body{
     margin-right: 2.6rem;
 }
 
-.footer__top-contact-img {
 
-}
-
-.footer__top-contact-phone-wrap {
-
-}
 
 .footer__top-contact-phone {
     font-size: 1.5rem;

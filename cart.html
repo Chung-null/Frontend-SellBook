@@ -183,30 +183,10 @@
 					</a>
 				</div>
 				<div class="col-3 cart__body-quantity">
-                    <input class="cart__body-quantity-minus" type="button" value="-">
-                    <input aria-label="quantity" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-                    <script>//<![CDATA[
-                        $('cart__body-quantity-total').each(function() {
-                          var $this = $(this),
-                            qty = $this.parent().find('cart__body-quantity-total'),
-                            min = Number($this.attr('min')),
-                            max = Number($this.attr('max'))
-                          if (min == 0) {
-                            var d = 0
-                          } else d = min
-                          $(qty).on('click', function() {
-                            if ($(this).hasClass('cart__body-quantity-minus')) {
-                              if (d > min) d += -1
-                            } else if ($(this).hasClass('cart__body-quantity-plus')) {
-                              var x = Number($this.val()) + 1
-                              if (x <= max) d += 1
-                            }
-                            $this.attr('value', d).val(d)
-                          })
-                        })
-                        //]]></script>
-				</div>
+                    <input class="cart__body-quantity-minus" value="-" type="button" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) &amp;&amp; qty &gt; 1 ) effect.value--;return false;">
+                    <input type="number" class="cart__body-quantity-total" id="qty" step="1" min="1" max="999" name="col-3 cart__body-quantity" value="1">
+                    <input class="cart__body-quantity-plus" value="+" type="button" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;">
+                </div>
                 
 				<div class="col-3 cart__body-price">
 					<span>39.500đ</span>
@@ -225,10 +205,10 @@
 					</a>
 				</div>
 				<div class="col-3 cart__body-quantity">
-                    <input type="button" value="-"  class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="2" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-				</div>
+                    <input class="cart__body-quantity-minus" value="-" type="button" onclick="var effect = document.getElementById('qqty'); var qqty = effect.value; if( !isNaN( qqty ) &amp;&amp; qqty &gt; 1 ) effect.value--;return false;">
+                    <input type="number" class="cart__body-quantity-total" id="qqty" step="1" min="1" max="999" name="col-3 cart__body-quantity" value="1">
+                    <input class="cart__body-quantity-plus" value="+" type="button" onclick="var effect = document.getElementById('qqty'); var qqty = effect.value; if( !isNaN( qqty )) effect.value++;return false;">
+                </div>
 				<div class="col-3 cart__body-price">
 					<span>76.800đ</span>
 
@@ -246,10 +226,10 @@
 					</a>
 				</div>
 				<div class="col-3 cart__body-quantity">
-                    <input type="button" value="-"  class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="1" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-				</div>
+                    <input class="cart__body-quantity-minus" value="-" type="button" onclick="var effect = document.getElementById('qqqty'); var qqqty = effect.value; if( !isNaN( qqqty ) &amp;&amp; qqqty &gt; 1 ) effect.value--;return false;">
+                    <input type="number" class="cart__body-quantity-total" id="qqqty" step="1" min="1" max="999" name="col-3 cart__body-quantity" value="1">
+                    <input class="cart__body-quantity-plus" value="+" type="button" onclick="var effect = document.getElementById('qqqty'); var qqqty = effect.value; if( !isNaN( qqqty )) effect.value++;return false;">
+                </div>
 				<div class="col-3 cart__body-price">
 					<span>70.000đ</span>
 
@@ -267,10 +247,10 @@
 					</a>
 				</div>
 				<div class="col-3 cart__body-quantity">
-                    <input type="button" value="-"  class="cart__body-quantity-minus">
-                    <input type="number" step="1" min="1" max="999" value="2" class="cart__body-quantity-total">
-                    <input type="button" value="+" class="cart__body-quantity-plus">
-				</div>
+                    <input class="cart__body-quantity-minus" value="-" type="button" onclick="var effect = document.getElementById('qqqqty'); var qqqqty = effect.value; if( !isNaN( qqqqty ) &amp;&amp; qqqqty &gt; 1 ) effect.value--;return false;">
+                    <input type="number" class="cart__body-quantity-total" id="qqqqty" step="1" min="1" max="999" name="col-3 cart__body-quantity" value="1">
+                    <input class="cart__body-quantity-plus" value="+" type="button" onclick="var effect = document.getElementById('qqqqty'); var qqqqty = effect.value; if( !isNaN( qqqqty )) effect.value++;return false;">
+                </div>
 				<div class="col-3 cart__body-price">
 					<span>112.500đ</span>
 

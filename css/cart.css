@@ -1,6 +1,3 @@
-.cart {
-
-}
 
 .cart__head {
  	padding: 1.6rem 0;
@@ -66,10 +63,15 @@
 }
 
 .cart__body-quantity-total {
-	width: 3rem;
-	height: 3rem;
-	margin-left: -0.5rem;
-	outline: none;
+	height: 46px;
+	padding: 10px 10px;
+	width: 50px;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+	font-size: 14px;
+	border: none;
+	background-color: #f2f4f5;
 	text-align: center;
 
 }
@@ -103,9 +105,6 @@
 	padding: 2rem 0;
 }
 
-.cart__foot-update {
-	
-}
 
 .cart__foot-update-btn {
 	padding: 1rem 1.8rem;
@@ -161,7 +160,7 @@ input[type=number] {
 .cart__body-quantity-plus {
 	width: 2rem;
 	height: 3rem;
-	margin-left: -0.5rem;
+	margin-left: 0rem;
 	outline: none;
 }
 
